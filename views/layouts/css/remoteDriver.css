@@ -1,0 +1,47 @@
+body {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.hidden-button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    height: 250px;
+    width: 350px;
+}
+
+.hidden-button img{
+    height: 250px;
+    width: 350px;
+}
+/* 
+#left-button {
+    margin: 200px;
+    height: 200px;
+    background-size: 275px;
+    background-repeat: no-repeat;
+    width: 400px;
+    background-image: url("../../../assets/pictures/left_arrow.png")
+} 
+
+#right-button {
+    margin: 200px;
+    background-image: url("../../../assets/pictures/right_arrow.png")
+}
+
+#down-button {
+    margin: 0 auto;
+    background-image: url("../../../assets/pictures/down_arrow.png")
+}
+
+#up-button {
+    margin: 0 auto;
+    background-image: url("../../../assets/pictures/up_arrow.png")
+} */
