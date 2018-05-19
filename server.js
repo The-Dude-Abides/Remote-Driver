@@ -15,6 +15,12 @@ var PORT = process.env.PORT || 3031;
 // Requiring our models for syncing
 var db = require("./models");
 
+const exhbs = require("express-handlebars");
+
+app.engine("handlebars", exhbs({
+    defaultLayout: "main"
+  }));
+  app.set("view engine", "handlebars");
 // Sets up the Express app to handle data parsing
 
 // parse application/x-www-form-urlencoded
@@ -24,6 +30,10 @@ app.use(bodyParser.json());
 
 // Static directory
 app.use(express.static("public"));
+
+app.get("/", (req, res) => {
+    res.render("index");
+})
 
 // Routes
 // =============================================================
