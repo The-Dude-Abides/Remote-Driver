@@ -31,8 +31,7 @@ def setup():
 	pass
 
 # =============================================================================
-# The function is to send the command forward to the server, so as to make the 
-# car move forward.
+# The function is to send the command forward to the server, so as to make the car move forward.
 # ============================================================================= 
 def run(event):
 	global runbtn
