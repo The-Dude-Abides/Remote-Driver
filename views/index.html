@@ -6,13 +6,21 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href='css/remoteDriver.css'>
+    <!-- <script type="text/javascript" src="credentials.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,400,600,700">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
-        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js" type="text/javascript"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
 </head>
+
+
+
+<!--  <link href="scorecard-style.css" rel="stylesheet"> -->
+
 
 <body>
     <!-- <ul class="nav justify-content-center">
@@ -24,11 +32,11 @@
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">Remote Driver</a>
+                <a class="navbar-brand">Remote Driver</a>
             </div>
             <ul class="nav navbar-nav">
                 <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Home
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="">Home
                         <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu">
@@ -57,20 +65,20 @@
 
 
     <div class="container">
-        <button id="left-button" type="button" class="btn btn-primary btn-lg" value="offset 1 0 0 0" name="left" href="..v2/motor/forward....">
-            <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
+        <button id="left-button" type="button" class="btn btn-primary btn-lg" data-point="left -90">
+            <span class="glyphicon glyphicon-arrow-left"></span>
         </button>
 
-        <button id="up-button" type="button" class="btn btn-primary btn-lg" value="offset 0 1 0 0" name="left">
-            <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+        <button id="up-button" type="button" class="btn btn-primary btn-lg" data-point="up 180">
+            <span class="glyphicon glyphicon-arrow-up"></span>
         </button>
 
-        <button id="right-button" type="button" class="btn btn-primary btn-lg" value="offset 0 0 1 0" name="left">
-            <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
+        <button id="right-button" type="button" class="btn btn-primary btn-lg" data-point="right 90">
+            <span class="glyphicon glyphicon-arrow-right"></span>
         </button>
 
-        <button id="down-button" type="button" class="btn btn-primary btn-lg" value="offset 0 0 0 1" name="left">
-            <span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span>
+        <button id="down-button" type="button" class="btn btn-primary btn-lg" data-point="down -180">
+            <span class="glyphicon glyphicon-arrow-down"></span>
         </button>
     </div>
 
@@ -82,14 +90,33 @@
     <br>
     <div class="pagebreak"></div>
     <br>
-    <div class="simulation">
-        <br>
-        <br>simulation here
-        <br>
-        <br>
+
+    <div class="row">
+        <div class="column">
+            <div id="simulation" class="panel-default">
+                <br>
+                <br>simulation here
+                <br>
+                <br>
+            </div>
+        </div>
+
+        <div class="column">
+            <div id="command-log" class="panel-default">
+                <br>
+                <br>command-log
+                <br>
+                <br>
+            </div>
+        </div>
     </div>
     <br>
+
+    <br>
     <div class="pagebreak"></div>
+    <br>
+
+
 </body>
 
 </HTML>

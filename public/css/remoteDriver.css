@@ -8,10 +8,6 @@ body, .jumbotron {
     border-bottom: 1px solid black;
 }
 
-.jumbotron {
-    /* height: 200px; */
-}
-
 .navbar {
     border-radius: 0px;
     border-left: 0px;
@@ -32,7 +28,7 @@ h1 {
     float: center;
 }
 
-.simulation {
+#simulation, #command-log {
     border: 1px solid black;
     border-radius: 5px;
     padding: 15px;
