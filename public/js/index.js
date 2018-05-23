@@ -1,23 +1,26 @@
 $(document).ready(function() {
 
-    const commandLog = $("#commandlog");
-    const forward = $("#upbutton")
+    const commandLog = $("#command-log");
+    const forward = $("#up-button")
             // .val().appendTo(commandLog);
-    const right = $("#rightbutton");
+    const right = $("#right-button");
     // var left = $("#left-button");
-    const back = $("#downbutton");
+    const back = $("#down-button");
     // $('#left-button').click(function() {
     //     var clicker = $(this).attr('data-point');
     //     console.log(clicker);
     // })
+    const currentDirection = $("#compass");
 });
 
 $(document).ready(function() {
-$("#leftbutton").click(function() {
-    // var clicker = $("#left-button").attr( "data-point" ).text();
-    console.log("clicked: ");
+$(".arrow-btn").click(function() {
+    var name = $(this).attr("name");
+    var direction = $(this).attr("data-direction");
+    var degrees = $(this).attr("data-degrees");
+    console.log("clicked: " + name+"\ndirection: " + direction+"\ndegrees: " + degrees)
 })
 
 });
 
-console.log("what")
+console.log("drive safe ;p")
