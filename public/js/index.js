@@ -1,6 +1,10 @@
+var angle;
+const commandLog = $("#command-log");
+const currentDirection = $("#compass");
+
 $(document).ready(function() {
 
-    const commandLog = $("#command-log");
+
     const forward = $("#up-button")
             // .val().appendTo(commandLog);
     const right = $("#right-button");
@@ -10,7 +14,7 @@ $(document).ready(function() {
     //     var clicker = $(this).attr('data-point');
     //     console.log(clicker);
     // })
-    const currentDirection = $("#compass");
+
 });
 
 $(document).ready(function() {
@@ -19,9 +23,11 @@ $(".arrow-btn").click(function() {
     var direction = $(this).attr("data-direction");
     var degrees = $(this).attr("data-degrees");
     console.log("clicked: " + name+"\ndirection: " + direction+"\ndegrees: " + degrees);
+    var metaSample = ("\nclicked: " + name+"\ndirection: " + direction+"\ndegrees: " + degrees + "\n <br>");
 
     var glyph = $("<span class='glyphicon glyphicon-arrow-"+direction+" glyph-"+direction+"'></span>");
     $("#compass").empty().append(glyph);
+    $("#command-log").append(metaSample);
     
     
 })
