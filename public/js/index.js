@@ -1,5 +1,3 @@
-
-
 $(document).ready(function() {
 
     const commandLog = $("#commandlog");
@@ -15,7 +13,7 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-$(".").click(function() {
+$("#leftbutton").click(function() {
     // var clicker = $("#left-button").attr( "data-point" ).text();
     console.log("clicked: ");
 })
