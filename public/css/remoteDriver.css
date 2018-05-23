@@ -1,23 +1,35 @@
-body {
+body, .jumbotron {
+    background-color: aliceblue;
+    font-family: "Josefin Sans";
     text-align: center;
 }
+
+.jumbotron, .pagebreak {
+    border-bottom: 1px solid black;
+}
+
+.navbar {
+    border-radius: 0px;
+    border-left: 0px;
+    border-right: 0px;
+   }
 
 h1 {
     text-align: center;
 }
 
-.hidden-button {
-    background-color: transparent;
-    background-repeat: no-repeat;
-    border: none;
-    cursor: pointer;
-    overflow: hidden;
-    outline: none;
-    height: 250px;
-    width: 350px;
+#left-button, #right-button, #up-button, #down-button {
+    height: 100px;
+    width: 100px;
 }
 
-.hidden-button img{
-    height: 250px;
-    width: 350px;
+.dropdown {
+    text-align: center;
+    float: center;
+}
+
+.simulation {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 15px;   
 }
