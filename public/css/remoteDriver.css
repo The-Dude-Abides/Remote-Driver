@@ -1,35 +1,78 @@
-body, .jumbotron {
-    background-color: aliceblue;
-    font-family: "Josefin Sans";
-    text-align: center;
+body {
+  width: auto;
 }
 
-.jumbotron, .pagebreak {
-    border-bottom: 1px solid black;
+body,
+.jumbotron {
+  background-color: aliceblue;
+  font-family: "Josefin Sans";
+  text-align: center;
+}
+
+.jumbotron,
+.pagebreak {
+  border-bottom: 1px solid black;
+}
+
+.pagebreak {
+  margin: 10px;
 }
 
 .navbar {
-    border-radius: 0px;
-    border-left: 0px;
-    border-right: 0px;
-   }
-
-h1 {
-    text-align: center;
+  border-radius: 0px;
+  border-left: 0px;
+  border-right: 0px;
 }
 
-#left-button, #right-button, #up-button, #down-button {
-    height: 100px;
-    width: 100px;
+h1 {
+  text-align: center;
+}
+
+#left-button,
+#right-button,
+#up-button,
+#down-button {
+  height: 100px;
+  width: 100px;
 }
 
 .dropdown {
-    text-align: center;
-    float: center;
+  text-align: center;
+  float: center;
 }
 
-.simulation {
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 15px;   
+#simulation {
+height: 150px;
+ }
+
+ #command-log {
+    height: auto;
+ }
+
+#simulation,
+#command-log {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px 23px 10px 23px;
+  width: auto;
+  background-color: rgb(222, 218, 238);
 }
+
+#compass {
+    position: absolute;
+    border-radius: 100px;
+    height: 100px;
+    width: 100px;
+    background-color: lavender;
+    margin: 10px;
+    padding: 40px;
+}
+
+#compass.span {
+    position: absolute;
+        top: 45px;
+        left: 2px;
+        width: 100%;
+}
+
