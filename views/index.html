@@ -42,7 +42,7 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li>
-                            <a>Admin Panel</a>
+                            <a data-toggle="modal" data-target="#myModal">Admin Panel</a>
                         </li>
                         <li>
                             <a>Activity Log</a>
@@ -66,7 +66,8 @@
 
 
     <div class="container">
-        <button id="left-button" type="button" class="btn btn-primary btn-lg arrow-btn" data-direction="left" data-degrees="-90" name="left button">
+        <button id="left-button" type="button" class="btn btn-primary btn-lg arrow-btn" data-direction="left" data-degrees="-90"
+            name="left button">
             <span class="glyphicon glyphicon-arrow-left"></span>
         </button>
 
@@ -74,11 +75,13 @@
             <span class="glyphicon glyphicon-arrow-up"></span>
         </button>
 
-        <button id="right-button" type="button" class="btn btn-primary btn-lg arrow-btn" data-direction="right" data-degrees="90" name="right button">
+        <button id="right-button" type="button" class="btn btn-primary btn-lg arrow-btn" data-direction="right" data-degrees="90"
+            name="right button">
             <span class="glyphicon glyphicon-arrow-right"></span>
         </button>
 
-        <button id="down-button" type="button" class="btn btn-primary btn-lg arrow-btn" data-direction="down" data-degrees="-180" name="down button">
+        <button id="down-button" type="button" class="btn btn-primary btn-lg arrow-btn" data-direction="down" data-degrees="-180"
+            name="down button">
             <span class="glyphicon glyphicon-arrow-down"></span>
         </button>
     </div>
@@ -114,6 +117,26 @@
     <div class="pagebreak"></div>
     <br>
 
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Administrative Panel</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Place config options here</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
 </body>
 
