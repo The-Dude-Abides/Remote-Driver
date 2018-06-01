@@ -6,7 +6,11 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
+<<<<<<< HEAD
+    "hoek": "^4.2.1",
+=======
     "heroku": "^7.0.84",
+>>>>>>> c0343bca79133ca1e1919836ee4e937fc3c86cbe
     "mysql2": "^1.5.3",
     "sequelize": "^4.37.8"
   },
