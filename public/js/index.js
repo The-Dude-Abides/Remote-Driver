@@ -14,28 +14,7 @@ $(document).ready(function () {
     //     const clicker = $(this).attr('data-point');
     //     console.log(clicker);
     // })
-
-
-});
-
-$(document).ready(function () {
-    $(".arrow-btn").click(function () {
-        const name = $(this).attr("name");
-        const direction = $(this).attr("data-direction");
-        const degrees = $(this).attr("data-degrees");
-        console.log("clicked: " + name + "\ndirection: " + direction + "\ndegrees: " + degrees);
-        const metaSample = ("<div><br>clicked: " + name + "<br>direction: " + direction + "<br>degrees: " + degrees + "<br></div>");
-
-        const glyph = $("<span class='glyphicon glyphicon-arrow-" + direction + " glyph- glyph-" + direction + "'></span>");
-        $("#compass").empty().append(glyph);
-        $("#command-log").append(metaSample);
-
-
-    })
-
-});
-
-$(document).ready(function () {
+    const left = $("#left-button");
 
     var canvas = document.getElementById('game');
     var context = canvas.getContext('2d');
@@ -118,7 +97,7 @@ $(document).ready(function () {
     }
     document.addEventListener('keydown', function (e) {
         // prevent snake from backtracking on itself
-        if (e.which === 37 && snake.dx === 0) {
+        if (e.which === 37 && snake.dx === 0 || back) {
             snake.dx = -grid;
             snake.dy = 0;
         }
@@ -136,6 +115,33 @@ $(document).ready(function () {
         }
     });
     requestAnimationFrame(loop);
+
+    forward.click(function() {
+            snake.dx = -grid;
+            snake.dy = 0;
+    });
+});
+
+$(document).ready(function () {
+    $(".arrow-btn").click(function () {
+        const name = $(this).attr("name");
+        const direction = $(this).attr("data-direction");
+        const degrees = $(this).attr("data-degrees");
+        console.log("clicked: " + name + "\ndirection: " + direction + "\ndegrees: " + degrees);
+        const metaSample = ("<div><br>clicked: " + name + "<br>direction: " + direction + "<br>degrees: " + degrees + "<br></div>");
+
+        const glyph = $("<span class='glyphicon glyphicon-arrow-" + direction + " glyph- glyph-" + direction + "'></span>");
+        $("#compass").empty().append(glyph);
+        $("#command-log").append(metaSample);
+
+
+    })
+
+});
+
+$(document).ready(function () {
+
+
 });
 
 console.log("drive safe ;p")
