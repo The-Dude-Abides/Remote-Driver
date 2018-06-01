@@ -1,6 +1,7 @@
 // const angle;
 const commandLog = $("#command-log");
 const currentDirection = $("#compass");
+var herokuWhat = require(Node)
 
 $(document).ready(function () {
 
