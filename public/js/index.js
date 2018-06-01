@@ -1,3 +1,5 @@
+var path = require("path");
+
 var angle;
 const commandLog = $("#command-log");
 const currentDirection = $("#compass");
@@ -8,13 +10,8 @@ $(document).ready(function() {
     const forward = $("#up-button")
             // .val().appendTo(commandLog);
     const right = $("#right-button");
-    // var left = $("#left-button");
+    var left = $("#left-button");
     const back = $("#down-button");
-    // $('#left-button').click(function() {
-    //     var clicker = $(this).attr('data-point');
-    //     console.log(clicker);
-    // })
-
 });
 
 $(document).ready(function() {
