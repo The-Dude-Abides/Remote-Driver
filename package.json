@@ -1,26 +1,40 @@
 {
-  "name": "Remote-Driver",
+  "name": "examples",
   "version": "1.0.0",
-  "description": "Coding movement for storage in a database, combined with a remote vehicle",
-  "main": "server.js",
+  "description": "Example of how to setup Karma.",
+  "main": "index.js",
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
+<<<<<<< HEAD
     "hoek": "^4.2.1",
+=======
+    "heroku": "^7.0.84",
+>>>>>>> c0343bca79133ca1e1919836ee4e937fc3c86cbe
     "mysql2": "^1.5.3",
     "sequelize": "^4.37.8"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "browserify": "^13.3.0",
+    "chai": "^3.5.0",
+    "karma": "^2.0.2",
+    "karma-browserify": "^5.2.0",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-commonjs": "^1.0.0",
+    "karma-mocha": "^1.1.1",
+    "karma-mocha-reporter": "^2.2.5",
+    "mocha": "^5.2.0",
+    "watchify": "^3.11.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "karma start"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/The-Dude-Abides/Remote-Driver.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Peleke Sengstacke",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/The-Dude-Abides/Remote-Driver/issues"
