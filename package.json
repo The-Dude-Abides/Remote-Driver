@@ -6,19 +6,20 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
+    "heroku": "^7.0.84",
     "mysql2": "^1.5.3",
     "sequelize": "^4.37.8"
   },
   "devDependencies": {
     "browserify": "^13.3.0",
     "chai": "^3.5.0",
-    "karma": "^1.7.1",
+    "karma": "^2.0.2",
     "karma-browserify": "^5.2.0",
     "karma-chrome-launcher": "^1.0.1",
     "karma-commonjs": "^1.0.0",
     "karma-mocha": "^1.1.1",
     "karma-mocha-reporter": "^2.2.5",
-    "mocha": "^3.5.3",
+    "mocha": "^5.2.0",
     "watchify": "^3.11.0"
   },
   "scripts": {
