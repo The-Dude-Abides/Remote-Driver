@@ -8,7 +8,7 @@ describe("remote-driver", function () {
   this.timeout(5000);
   it("Should send the user to the main page", function (done) {
     Nightmare({ show: true })
-      .goto("remote driver")
+      .goto("https://remote-driver.herokuapp.com/)
       .click("a[href='/home']")
       .evaluate(function () {
         return document.title;
@@ -21,7 +21,7 @@ describe("remote-driver", function () {
 
   it("should press the left button", function (done) {
     new Nightmare({ show: true })
-      .goto("remote driver")
+      .goto("https://remote-driver.herokuapp.com/")
       .click("#left-button")
       .then(function (button) {
         expect(button).to.not.equal(undefined);
@@ -31,7 +31,7 @@ describe("remote-driver", function () {
 
   it("should press the down button", function (done) {
     new Nightmare({ show: true })
-      .goto("remote driver")
+      .goto("https://remote-driver.herokuapp.com/")
       .click("#down-button")
       .then(function (button) {
         expect(button).to.not.equal(undefined);
@@ -41,7 +41,7 @@ describe("remote-driver", function () {
 
   it("should press the right button", function (done) {
     new Nightmare({ show: true })
-      .goto("remote driver")
+      .goto("https://remote-driver.herokuapp.com/")
       .click("#right-button")
       .then(function (button) {
         expect(button).to.not.equal(undefined);
@@ -51,7 +51,7 @@ describe("remote-driver", function () {
 
   it("should press the up button", function (done) {
     new Nightmare({ show: true })
-      .goto("remote driver")
+      .goto("https://remote-driver.herokuapp.com/")
       .click("#up-button")
       .then(function (button) {
         expect(button).to.not.equal(undefined);
