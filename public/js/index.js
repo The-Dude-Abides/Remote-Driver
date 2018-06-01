@@ -25,7 +25,7 @@ $(".arrow-btn").click(function() {
     console.log("clicked: " + name+"\ndirection: " + direction+"\ndegrees: " + degrees);
     var metaSample = ("<div><br>clicked: " + name+"<br>direction: " + direction+"<br>degrees: " + degrees + "<br></div>");
 
-    var glyph = $("<span class='glyphicon glyphicon-arrow-"+direction+" glyph- glyph-"+direction+"'></span>");
+    var glyph = $("<span id='glyph-"+direction+"'r class='glyphicon glyphicon-arrow-"+direction+" glyph-"+direction+"'></span>");
     $("#compass").empty().append(glyph);
     $("#command-log").append(metaSample);
     
