@@ -1,18 +1,3 @@
--- Drops the driver if it exists currently --
-DROP DATABASE IF EXISTS Driver;
--- Creates the "driver" database --
-CREATE DATABASE Driver;
-
-USE Driver;
-
-CREATE TABLE Drivers
-(
-	id int NOT NULL AUTO_INCREMENT,
-	user_name varchar(255) NOT NULL,
-    `timestamp` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-	PRIMARY KEY (id)
-);
-
 INSERT INTO Drivers (user_name) 
 VALUES ('koltp'),
 	   ('mike'),
