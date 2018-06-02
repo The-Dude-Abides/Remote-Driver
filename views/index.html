@@ -17,99 +17,79 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
 </head>
 
-    <nav class="navbar navbar-inverse navbar-dark">
-        <div class="navbar-header">
+<nav class="navbar navbar-inverse navbar-dark">
+    <div class="navbar-header">
 
-            <a class="target-route" data-toggle="modal" data-target="#">REMOTE DRIVER</a>
-            <a class="target-route" data-toggle="modal" data-target="#myModal">Admin Panel</a>
-            <a class="target-route" data-toggle="modal" data-target="#myModal">Activity Log</a>
-            <a class="target-route" data-toggle="modal" data-target="#myModal">Data</a>
-            <a class="target-route" data-toggle="modal" data-target="#myModal">Account</a>
+        <a class="target-route" data-toggle="modal" data-target="#">REMOTE DRIVER</a>
+        <a class="target-route" data-toggle="modal" data-target="#myModal">Admin Panel</a>
+        <a class="target-route" data-toggle="modal" data-target="#myModal">Activity Log</a>
+        <a class="target-route" data-toggle="modal" data-target="#myModal">Data</a>
+        <a class="target-route" data-toggle="modal" data-target="#myModal">Account</a>
 
-        </div>
+    </div>
+</nav>
 
-    </nav>
+<br>
 
-    <br>
+<!-- <div class="jumbotron-narrow"> -->
+<!-- <div class="pagebreak"></div> -->
 
-    <!-- <div class="jumbotron-narrow"> -->
-    <!-- <div class="pagebreak"></div> -->
-
-    <div class="container" id="btn-container">
-        <div class="row"></div>
+<!-- FORWARD BUTTON -->
+<div class="container" id="btn-container">
+    <div class="row">
         <button id="up-button" type="button" class="button arrow-btn" data-direction="up" data-degrees="180" name="up button">
             <span class="glyphicon glyphicon-arrow-up"></span>
         </button>
     </div>
-        
-    
+
+<!-- LEFT, STOP, RIGHT BUTTONS -->
     <div class="row">
         <button id="left-button" type="button" class="button arrow-btn" data-direction="left" data-degrees="-90" name="left button">
             <span class="glyphicon glyphicon-arrow-left"></span>
         </button>
 
-        <button id="down-button" type="button" class="button arrow-btn" data-direction="down" data-degrees="-180" name="down button">
-                <span class="glyphicon glyphicon-arrow-down"></span>
-            </button>
+        <button id="stop-button" type="button" class="button arrow-btn" data-direction="" data-degrees="0" name="stop button">
+            <span class="glyphicon glyphicon-stop"></span>
+        </button>
 
         <button id="right-button" type="button" class="button arrow-btn" data-direction="right" data-degrees="90" name="right button">
             <span class="glyphicon glyphicon-arrow-right"></span>
         </button>
-
-        <h2>Command Panel</h2>
-
     </div>
 
-        <!-- motor/forward	Control the motor to forward.
-    motor/backward	Control the motor to go backward.
-    motor/stop	 -->
+    <!-- BACKWARD BUTTON -->
+    <div class="row">
+        <button id="down-button" type="button" class="button arrow-btn" data-direction="down" data-degrees="-180" name="down button">
+            <span class="glyphicon glyphicon-arrow-down"></span>
+        </button>
+    </div>
 
-        <div class="row" id="commands">
+    <h2>Command Panel</h2>
+</div>
+<!-- END COMMAND PANEL -->
 
-            <div class="col-lg-4">
-                <div class="rounded-circle" id="compass"></div>
-            </div>
-                
-            <div class="col-lg-4">
-                    <div class="panel-default" id="simulation"></div>
-            </div>
 
-            <div class="col-4">
-                <div class="panel-default" id="command-log">
-                    <br>
-                    <div>command-log</div>
-                </div>
-            </div>
+<div class="row" id="commands">
 
+    <div class="col-lg-4">
+        <div class="rounded-circle" id="compass"></div>
+    </div>
+
+
+    <div class="col-4">
+        <div class="panel-default" id="command-log">
+            <br>
+            <div>command-log</div>
         </div>
+    </div>
 
-        <br>
+    <div class="col-lg-4">
+        <div class="panel-default" id="simulation"></div>
+        <div class="canvas" id="game"></div>
+    </div>
+</div>
 
-        <br>
-        <div class="pagebreak"></div>
-        <br>
-        <canvas id="game"></canvas>
-
-        <!-- Modal -->
-        <div id="myModal" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Admin Panel</h4>
-                    </div>
-                    <div class="modal-body">
-                        <p>Place config options here</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-
-            </div>
-        </div>
+<!-- <div class="pagebreak"></div> -->
 
 </body>
 
