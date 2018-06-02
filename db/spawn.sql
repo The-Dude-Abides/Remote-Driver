@@ -1,4 +1,3 @@
-
 USE Driver;
 
 CREATE TABLE Drivers
@@ -9,6 +8,10 @@ CREATE TABLE Drivers
 	PRIMARY KEY (id)
 );
 
-INSERT INTO Drivers (user_name) VALUES ('koltp','MikeY', 'AdamM', 'HaydenM')
+INSERT INTO Drivers (user_name) 
+VALUES ('koltp'),
+	   ('mike'),
+	   ('adam'),
+	   ('hayden');
 
 --  mysql --host=127.0.0.1 --port=3306 --user=root --password=root
