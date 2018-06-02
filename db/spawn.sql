@@ -8,10 +8,6 @@ CREATE TABLE Drivers
 	PRIMARY KEY (id)
 );
 
-INSERT INTO Drivers (user_name) 
-VALUES ('koltp'),
-	   ('mike'),
-	   ('adam'),
-	   ('hayden');
+INSERT INTO users (user_name) VALUES ('koltp','MikeY', 'AdamM', 'HaydenM')
 
 --  mysql --host=127.0.0.1 --port=3306 --user=root --password=root
