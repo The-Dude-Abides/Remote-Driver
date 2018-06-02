@@ -1,8 +1,8 @@
 {
     "development": {
       "username": "root",
-      "password": null,
-      "database": "blogger",
+      "password": "M3y8668=",
+      "database": "Driver",
       "host": "127.0.0.1",
       "dialect": "mysql"
     },
