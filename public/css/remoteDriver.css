@@ -131,10 +131,6 @@ canvas#game {
   font-size: 12px;
 }
 
-.dropdown-menu {
-  style: none;
-}
-
 .target {
   width: 100%;
 }
@@ -151,3 +147,11 @@ font-size: 14px;
   width: auto;
 }
 
+#car{
+  position:absolute;
+  left: 600px;
+  top: 400px;
+  width: 200px;
+  height: 200px;
+  background:red;
+}
