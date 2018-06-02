@@ -29,6 +29,7 @@ body,
   border: none;
   width: auto;
   margin-top: 0px;
+  min-width: 600px;
 }
 
 h1 {
@@ -50,20 +51,17 @@ h1 {
   offset: left;
 }
 
-#commands.row {
+#data-panel.row {
   height: 400px;
   width: 100%;
   margin: 0px;
   background-color: rgb(51, 49, 58);
+  min-width: 600px;
 }
 
  #command-log {
     height: 400px;
-    /* width: 26.97%; */
-    /* width: 100%; */
-    /* float: left; */
-    /* border: 0px solid black; */
-    /* border-radius: 5px; */
+
     padding: 15px;
     /* margin: 10px 23px 10px 23px; */
     width: 100%;

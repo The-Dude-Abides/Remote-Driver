@@ -20,11 +20,11 @@
 <nav class="navbar navbar-inverse navbar-dark">
     <div class="navbar-header">
 
-        <a class="target-route" data-toggle="modal" data-target="#">REMOTE DRIVER</a>
-        <a class="target-route" data-toggle="modal" data-target="#myModal">Admin Panel</a>
-        <a class="target-route" data-toggle="modal" data-target="#myModal">Activity Log</a>
-        <a class="target-route" data-toggle="modal" data-target="#myModal">Data</a>
-        <a class="target-route" data-toggle="modal" data-target="#myModal">Account</a>
+        <a href="#" class="target-route">REMOTE DRIVER</a>
+        <a href="#commandpanel" class="target-route">Command Panel</a>
+        <a href="#" class="target-route">Activity Log</a>
+        <a href="#datapanel" class="target-route">Data Panel</a>
+        <a href="" class="target-route">Account</a>
 
     </div>
 </nav>
@@ -59,6 +59,7 @@
 
     <!-- BACKWARD BUTTON -->
     <div class="row">
+            <a name="commandpanel"></a>
         <button id="down-button" type="button" class="button arrow-btn" data-direction="down" data-degrees="-180" name="down button">
             <span class="glyphicon glyphicon-arrow-down"></span>
         </button>
@@ -69,17 +70,19 @@
 <!-- END COMMAND PANEL -->
 
 
-<div class="row" id="commands">
+<div class="row" id="data-panel">
+        <a name="datapanel"></a>
 
     <div class="col-lg-4">
         <div class="rounded-circle" id="compass"></div>
     </div>
 
 
-    <div class="col-4">
-        <div class="panel-default" id="command-log">
+    <div class="col-4" id="command-log">
+        <a name="activitylog"></a>
+        Events
+        
             <br>
-            <div>command-log</div>
         </div>
     </div>
 
@@ -88,8 +91,6 @@
         <div class="canvas" id="game"></div>
     </div>
 </div>
-
-<!-- <div class="pagebreak"></div> -->
 
 </body>
 
