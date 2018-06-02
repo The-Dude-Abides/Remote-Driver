@@ -1,5 +1,5 @@
 
-USE driver;
+USE Driver;
 
 CREATE TABLE users
 (
