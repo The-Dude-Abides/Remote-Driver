@@ -1,3 +1,8 @@
+-- Drops the driver if it exists currently --
+DROP DATABASE IF EXISTS Driver;
+-- Creates the "driver" database --
+CREATE DATABASE Driver;
+
 USE Driver;
 
 CREATE TABLE Drivers
