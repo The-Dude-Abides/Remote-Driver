@@ -1,7 +1,7 @@
 -- Drops the driver if it exists currently --
-DROP DATABASE IF EXISTS driver;
+DROP DATABASE IF EXISTS rem_driver;
 -- Creates the "driver" database --
-CREATE DATABASE driver;
+CREATE DATABASE Driver;
 -- Drops the movement if it exists currently --
 DROP DATABASE IF EXISTS movement;
 -- Creates the "movement" database --
