@@ -1,10 +1,26 @@
--- Drops the driver if it exists currently --
--- DROP DATABASE IF EXISTS Driver;
--- Creates the "driver" database --
--- CREATE DATABASE Driver;
--- Drops the movement if it exists currently --
--- DROP DATABASE IF EXISTS Movement;
--- Creates the "movement" database --
--- CREATE DATABASE Movement;
+DROP DATABASE IF EXISTS DB;
+CREATE DATABASE DB;
+USE DB;
 
---  mysql --host=127.0.0.1 --port=8080 --user=root --password=M3y8668=
+CREATE TABLE Drivers
+(
+	id int NOT NULL AUTO_INCREMENT,
+	user_name varchar(255) NOT NULL,
+    `timestamp` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+	PRIMARY KEY (id)
+);
+
+CREATE TABLE Events
+(
+	id int NOT NULL AUTO_INCREMENT,
+	user_name varchar(255) NOT NULL,
+    button_name varchar(255) NOT NULL,
+    button_direction varchar(255) NOT NULL,
+    button_degree int NOT NULL,
+    current_direction varchar(255) NOT NULL,
+    current_degree int NOT NULL,
+    `timestamp` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+	PRIMARY KEY (id)
+);
+
+--  mysql --host=127.0.0.1 --port=3306 --user=root --password=root
