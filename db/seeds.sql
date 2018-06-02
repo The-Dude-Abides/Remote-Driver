@@ -1,5 +1,5 @@
 
-USE movement;
+USE Movement;
 
 CREATE TABLE events
 (
