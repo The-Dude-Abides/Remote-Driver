@@ -1,4 +1,6 @@
+var car = $('car');
 
+          
 $(document).ready(function() {
     
     var angle;
@@ -6,8 +8,7 @@ $(document).ready(function() {
     const right = $("#right-button");
     const left = $("#left-button");
     const back = $("#down-button");
-    var car = $('#car')
-          $("#game").append(car);
+    $("#game").append(car);    
     
 
     const commandLog = $("#command-log");
@@ -48,7 +49,6 @@ $(document).ready(function() {
           }
         });
         
-
 console.log("drive safe ;p")
 
 

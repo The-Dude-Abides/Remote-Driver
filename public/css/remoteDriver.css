@@ -61,14 +61,14 @@ h1 {
 
  #command-log {
     height: 400px;
-
     padding: 15px;
     /* margin: 10px 23px 10px 23px; */
-    width: 100%;
+    /* width: 100%; */
     min-height: 200px;
     overflow-y: scroll;
     color: lightgray;
  }
+ 
 
 #simulation,
  {
@@ -148,10 +148,8 @@ font-size: 14px;
 }
 
 #car{
-  position:absolute;
-  left: 600px;
-  top: 400px;
-  width: 200px;
-  height: 200px;
-  background:red;
+  width: 20px;
+  height: 20px;
+  background:green;
+  border-radius: 30px;
 }
