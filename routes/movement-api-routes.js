@@ -8,6 +8,7 @@ module.exports = function (app) {
         db.Movement.findAll({})
             .then(function (dbMovement) {
              res.json(dbMovement);
+             console.log(dbMovement);
         });
     });
 
