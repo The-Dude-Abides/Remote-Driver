@@ -6,7 +6,6 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href='css/remoteDriver.css'>
-    <!-- <script type="text/javascript" src="credentials.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
     <script src="js/index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
@@ -18,126 +17,99 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
 </head>
 
+    <nav class="navbar navbar-inverse navbar-dark">
+        <div class="navbar-header">
 
+            <a class="target-route" data-toggle="modal" data-target="#">REMOTE DRIVER</a>
+            <a class="target-route" data-toggle="modal" data-target="#myModal">Admin Panel</a>
+            <a class="target-route" data-toggle="modal" data-target="#myModal">Activity Log</a>
+            <a class="target-route" data-toggle="modal" data-target="#myModal">Data</a>
+            <a class="target-route" data-toggle="modal" data-target="#myModal">Account</a>
 
-<!--  <link href="scorecard-style.css" rel="stylesheet"> -->
-
-
-<body>
-    <!-- <ul class="nav justify-content-center">
-        <li class="nav-item">
-            <class="dropdown-menu">Remote Driver</a>
-        </li>
-    </ul> -->
-
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand">Remote Driver</a>
-            </div>
-            <ul class="nav navbar-nav">
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="">Home
-                        <span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a data-toggle="modal" data-target="#myModal">Admin Panel</a>
-                        </li>
-                        <li>
-                            <a>Activity Log</a>
-                        </li>
-                        <li>
-                            <a>Data</a>
-                        </li>
-                        <li>
-                            <a>Account</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
         </div>
+
     </nav>
 
-    <div class="jumbotron-narrow">
-        <h3>Remote Driver</h3>
-        <p>Internet of Things Device.</p>
+    <br>
+
+    <!-- <div class="jumbotron-narrow"> -->
+    <!-- <div class="pagebreak"></div> -->
+
+    <div class="container" id="btn-container">
+        <div class="row"></div>
+        <button id="up-button" type="button" class="button arrow-btn" data-direction="up" data-degrees="180" name="up button">
+            <span class="glyphicon glyphicon-arrow-up"></span>
+        </button>
     </div>
-
-
-    <div class="container">
-        <button id="left-button" type="button" class="btn btn-primary btn-lg arrow-btn" data-direction="left" data-degrees="-90"
-            name="left button">
+        
+    
+    <div class="row">
+        <button id="left-button" type="button" class="button arrow-btn" data-direction="left" data-degrees="-90" name="left button">
             <span class="glyphicon glyphicon-arrow-left"></span>
         </button>
 
-        <button id="up-button" type="button" class="btn btn-primary btn-lg arrow-btn" data-direction="up" data-degrees="180" name="up button">
-            <span class="glyphicon glyphicon-arrow-up"></span>
-        </button>
+        <button id="down-button" type="button" class="button arrow-btn" data-direction="down" data-degrees="-180" name="down button">
+                <span class="glyphicon glyphicon-arrow-down"></span>
+            </button>
 
-        <button id="right-button" type="button" class="btn btn-primary btn-lg arrow-btn" data-direction="right" data-degrees="90"
-            name="right button">
+        <button id="right-button" type="button" class="button arrow-btn" data-direction="right" data-degrees="90" name="right button">
             <span class="glyphicon glyphicon-arrow-right"></span>
         </button>
 
-        <button id="down-button" type="button" class="btn btn-primary btn-lg arrow-btn" data-direction="down" data-degrees="-180"
-            name="down button">
-            <span class="glyphicon glyphicon-arrow-down"></span>
-        </button>
+        <h2>Command Panel</h2>
+
     </div>
 
-    <!-- motor/forward	Control the motor to forward.
+        <!-- motor/forward	Control the motor to forward.
     motor/backward	Control the motor to go backward.
     motor/stop	 -->
 
-    <div class="pagebreak"></div>
+        <div class="row" id="commands">
 
-    <div class="row">
-        <div class="column">
-            <div id="simulation" class="panel-default">
+            <div class="col-lg-4">
                 <div class="rounded-circle" id="compass"></div>
-                <br>
-                <br>simulation here
-                <br>
             </div>
-        </div>
-
-        <div class="column">
-            <div id="command-log" class="panel-default">
-                <br>
-                <br>command-log
-                <br>
-                <br>
+                
+            <div class="col-lg-4">
+                    <div class="panel-default" id="simulation"></div>
             </div>
-        </div>
-    </div>
-    <br>
 
-    <br>
-    <div class="pagebreak"></div>
-    <br>
-    <canvas id="game" width="480" height="320"></canvas>
-
-    <!-- Modal -->
-    <div id="myModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Administrative Panel</h4>
-                </div>
-                <div class="modal-body">
-                    <p>Place config options here</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <div class="col-4">
+                <div class="panel-default" id="command-log">
+                    <br>
+                    <div>command-log</div>
                 </div>
             </div>
 
         </div>
-    </div>
+
+        <br>
+
+        <br>
+        <div class="pagebreak"></div>
+        <br>
+        <canvas id="game"></canvas>
+
+        <!-- Modal -->
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Admin Panel</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Place config options here</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
 
 </body>
 
