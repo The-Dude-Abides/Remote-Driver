@@ -1,9 +1,4 @@
--- Drops the movement if it exists currently --
--- DROP DATABASE IF EXISTS Movement;
--- Creates the "movement" database --
--- CREATE DATABASE Movement;
-
--- USE DB;
+USE DB;
 
 -- CREATE TABLE Events
 -- (
@@ -18,7 +13,10 @@
 -- 	PRIMARY KEY (id)
 -- );
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8f388e103cf70c8873ab318163f76eaf3d141e4f
 INSERT INTO Events (user_name, button_name, button_direction, button_degree, current_direction, current_degree)
 VALUES ('koltp', 'down-button',  'backward', '-180', 'backward', '-180'),
        ('koltp', 'up-button',    'forward',   '180', 'forward',  '0'),
