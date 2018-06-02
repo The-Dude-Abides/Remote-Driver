@@ -1,18 +1,22 @@
 USE DB;
 
-CREATE TABLE Events
-(
-	id int NOT NULL AUTO_INCREMENT,
-	user_name varchar(255) NOT NULL,
-    button_name varchar(255) NOT NULL,
-    button_direction varchar(255) NOT NULL,
-    button_degree int NOT NULL,
-    current_direction varchar(255) NOT NULL,
-    current_degree int NOT NULL,
-    `timestamp` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-	PRIMARY KEY (id)
-);
+-- CREATE TABLE Events
+-- (
+-- 	id int NOT NULL AUTO_INCREMENT,
+-- 	user_name varchar(255) NOT NULL,
+--     button_name varchar(255) NOT NULL,
+--     button_direction varchar(255) NOT NULL,
+--     button_degree int NOT NULL,
+--     current_direction varchar(255) NOT NULL,
+--     current_degree int NOT NULL,
+--     `timestamp` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+-- 	PRIMARY KEY (id)
+-- );
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> 8f388e103cf70c8873ab318163f76eaf3d141e4f
 INSERT INTO Events (user_name, button_name, button_direction, button_degree, current_direction, current_degree)
 VALUES ('koltp', 'down-button',  'backward', '-180', 'backward', '-180'),
        ('koltp', 'up-button',    'forward',   '180', 'forward',  '0'),
