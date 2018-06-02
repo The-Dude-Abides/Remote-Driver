@@ -1,3 +1,8 @@
+-- Drops the driver if it exists currently --
+DROP DATABASE IF EXISTS Driver;
+-- Creates the "driver" database --
+CREATE DATABASE Driver;
+
 USE Driver;
 
 CREATE TABLE Drivers
@@ -8,6 +13,6 @@ CREATE TABLE Drivers
 	PRIMARY KEY (id)
 );
 
-INSERT INTO users (user_name) VALUES ('koltp','MikeY', 'AdamM', 'HaydenM')
+INSERT INTO Drivers (user_name) VALUES ('koltp','MikeY', 'AdamM', 'HaydenM')
 
 --  mysql --host=127.0.0.1 --port=3306 --user=root --password=root
