@@ -1,27 +1,35 @@
+
+
 body {
   width: auto;
+  background-color: rgb(59, 56, 56);
+  font-family: "Josefin Sans" 100px;;
+  text-align: center;
 }
 
 body,
 .jumbotron {
   background-color: aliceblue;
-  font-family: "Josefin Sans";
-  text-align: center;
 }
 
-.jumbotron,
+/* .jumbotron, */
 .pagebreak {
   border-bottom: 1px solid black;
 }
 
 .pagebreak {
-  margin: 10px;
+ width: auto;
 }
 
-.navbar {
+.navbar, .navi-failsafe {
+  height: 20px;
   border-radius: 0px;
-  border-left: 0px;
-  border-right: 0px;
+  background-color: rgb(37, 35, 35);
+  opacity: 1;
+  border: none;
+  width: auto;
+  margin-top: 0px;
+  min-width: 600px;
 }
 
 h1 {
@@ -31,41 +39,57 @@ h1 {
 #left-button,
 #right-button,
 #up-button,
-#down-button {
+#down-button,
+#stop-button {
   height: 100px;
   width: 100px;
 }
 
-.dropdown {
-  text-align: center;
-  float: center;
+#stop-button{
+  /* position: relative; */
+  /* margin-left: 90px; */
+  offset: left;
 }
 
-#simulation {
-height: 150px;
- }
+#data-panel.row {
+  height: 400px;
+  width: 100%;
+  margin: 0px;
+  background-color: rgb(51, 49, 58);
+  min-width: 600px;
+}
 
  #command-log {
-    height: auto;
+    height: 400px;
+
+    padding: 15px;
+    /* margin: 10px 23px 10px 23px; */
+    width: 100%;
+    min-height: 200px;
+    overflow-y: scroll;
+    color: lightgray;
  }
 
 #simulation,
-#command-log {
-  border: 1px solid black;
+ {
+  border: 0px solid black;
   border-radius: 5px;
   padding: 15px;
-  margin: 10px 23px 10px 23px;
-  width: auto;
-  background-color: rgb(222, 218, 238);
+  /* margin: 10px 23px 10px 23px; */
+  width: 100%;
+  min-height: 200px;
+  background-color: rgb(51, 49, 58);
+  color: lightgray;
+
 }
 
 #compass {
-    position: absolute;
-    border-radius: 100px;
-    height: 100px;
-    width: 100px;
-    background-color: lavender;
-    margin: 10px;
+  position: absolute;
+  border-radius: 150px;
+  height: 300px;
+  width: 300px;
+  background-color: rgb(147, 153, 173);
+    margin: 30px;
     padding: 40px;
 }
 
@@ -74,6 +98,56 @@ height: 150px;
         top: 45px;
         left: 2px;
         width: 100%;
+        color: blue;
 }
 
-canvas { background: #eee; }
+canvas#game { 
+  background: #eee;
+  width: auto;
+}
+
+.arrow-btn {
+  border-radius: 100px;
+  border-width: 0px;
+  background-color: rgb(34, 32, 32);
+  margin-bottom: 5px;
+}
+
+.glyphicon {
+  color: green;
+  font-size: 300%;
+  margin: 0px;
+}
+
+.target-route {
+  float: left;
+  margin: 17px;
+  margin-left: 20px;
+  color: rgb(13, 138, 13);
+
+}
+
+.header-text{
+  font-size: 12px;
+}
+
+.dropdown-menu {
+  style: none;
+}
+
+.target {
+  width: 100%;
+}
+
+#what .pagebreak {
+  width: 100%;
+}
+
+#paths {
+font-size: 14px;
+}
+
+.compass-glyph {
+  width: auto;
+}
+
