@@ -15,11 +15,11 @@ CREATE TABLE events
 );
 
 
-INSERT INTO events (user_name) VALUES ('koltp')
-INSERT INTO events (button_name) VALUES ('down-button')
-INSERT INTO events (button_direction) VALUES ('backward')
-INSERT INTO events (button_degree) VALUES ('-180')
-INSERT INTO events (current_direction) VALUES ('backward')
+INSERT INTO events (user_name) VALUES ('koltp');
+INSERT INTO events (button_name) VALUES ('down-button');
+INSERT INTO events (button_direction) VALUES ('backward');
+INSERT INTO events (button_degree) VALUES ('-180');
+INSERT INTO events (current_direction) VALUES ('backward');
 INSERT INTO events (current_degree) VALUES ('-180');
 
 INSERT INTO events (user_name) VALUES ('koltp');
