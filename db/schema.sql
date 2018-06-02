@@ -1,5 +1,12 @@
+-- Drops the driver if it exists currently --
 DROP DATABASE IF EXISTS DB;
+-- Creates the "driver" database --
 CREATE DATABASE DB;
+-- Drops the movement if it exists currently --
+-- DROP DATABASE IF EXISTS Movement;
+-- Creates the "movement" database --
+-- CREATE DATABASE Movement;
+
 USE DB;
 
 CREATE TABLE Drivers

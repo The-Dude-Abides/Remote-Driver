@@ -2,7 +2,7 @@ var db = require("../models/");
 
 module.exports = function (app) {
     app.get("/api/driver", function (req, res) {
-        db.Driver.findAll()
+        db.DB.findAll()
             .then(function (dbDriver) {
              res.json(dbDriver);
              console.log(dbDriver);
@@ -10,8 +10,8 @@ module.exports = function (app) {
     });
 
     app.post("/api/driver", function(req, res) {
-        db.Driver.create(req.body).then(function(dbDriver) {
-          res.json(dbDrvier);
+        db.DB.create(req.body).then(function(dbDriver) {
+          res.json(dbDriver);
         });
       });
 
