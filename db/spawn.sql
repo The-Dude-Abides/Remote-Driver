@@ -1,5 +1,5 @@
 
-USE driver;
+USE Driver;
 
 CREATE TABLE users
 (
@@ -9,9 +9,7 @@ CREATE TABLE users
 	PRIMARY KEY (id)
 );
 
-INSERT INTO users (user_name) VALUES ('koltp');
-INSERT INTO users (user_name) VALUES ('MikeY');
-INSERT INTO users (user_name) VALUES ('AdamM');
-INSERT INTO users (user_name) VALUES ('HaydenM');
+INSERT INTO users (user_name) 
+VALUES ('koltp', 'mike', 'adam', 'hayden');
 
 --  mysql --host=127.0.0.1 --port=3306 --user=root --password=root
