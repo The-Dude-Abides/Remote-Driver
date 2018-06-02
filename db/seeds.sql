@@ -1,20 +1,3 @@
-
-USE Movement;
-
-CREATE TABLE events
-(
-	id int NOT NULL AUTO_INCREMENT,
-	user_name varchar(255) NOT NULL,
-    button_name varchar(255) NOT NULL,
-    button_direction varchar(255) NOT NULL,
-    button_degree int NOT NULL,
-    current_direction varchar(255) NOT NULL,
-    current_degree int NOT NULL,
-    `timestamp` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-	PRIMARY KEY (id)
-);
-
-
 INSERT INTO events (user_name, button_name, button_direction, button_degree, current_direction, current_degree)
 VALUES ('koltp', 'down-button',  'backward', '-180', 'backward', '-180'),
 ('koltp', 'up-button',    'forward',   '180', 'forward',  '0'),
