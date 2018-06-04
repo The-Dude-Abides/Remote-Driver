@@ -93,9 +93,12 @@ h1 {
   margin: 10px 23px 10px 23px;
   width: 300px;
   min-height: 200px;
-  overflow-y: scroll;
   color: lightgray;
   /* display: inline; */
+}
+
+#area {
+  overflow-y: scroll;
 }
 
 .textarea {
