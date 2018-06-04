@@ -1,54 +1,73 @@
-var car = $('car');
-
-          
 $(document).ready(function() {
     
     var angle;
     const forward = $("#up-button")
-    const right = $("#right-button");
-    const left = $("#left-button");
-    const back = $("#down-button");
-    $("#game").append(car);    
+    const right   = $("#right-button");
+    const left    = $("#left-button");
+    const back    = $("#down-button");
     
-
-    const commandLog = $("#command-log");
     const currentDirection = $("#compass");
-
+  
+    
     $(".arrow-btn").click(function() {
+      event.preventDefault();
         var name = $(this).attr("name");
         var direction = $(this).attr("data-direction");
         var degrees = $(this).attr("data-degrees");
-            console.log("clicked: " + name + "\ndirection: " + direction + "\ndegrees: " + degrees);
-        var metaSample = ("<div> <br> clicked: "   + name + "<br> direction: " + direction + "<br> degrees: "   + degrees + "<br> </div>");
-            // PUSH THIS DATA TO DATABASE
+
         
         var glyph = $("<span id='glyph-" + direction + "'r class='glyphicon glyphicon-arrow-" + direction + " glyph-" + direction+"'></span>");
-                    $("#compass").empty().append(glyph).addClass("compass-glyph");;
-                    $("#command-log").append(metaSample);
-                })
+        $("#circle").empty().append(glyph).addClass("compass-glyph");
+        
+        var metaSample = ("<div> <br> clicked: "   + name + "<br> direction: " + direction + "<br> degrees: "   + degrees + "<br> </div>");
+                  console.log("clicked: " + name + "\ndirection: " + direction + "\ndegrees: " + degrees);
+                  $("#area").append(metaSample);
+                    // PUSH THIS DATA TO DATABASE
 
+                    var d = $('#area');
+                    d.scrollTop(d.prop("scrollHeight"));
+
+        var car = $('#car').addClass("pseudoCar");
+                  $('#canvas').empty().append(car).addClass('moving-vehicle');
+                    })
+
+
+        var dx = 0, dy = 0;
+        var speed = 3; // px per second
         var direction = $(this).attr("data-direction");
-            car.stop(1);
+           
             switch (direction){
             case 'up':
-              car.animate({top:'-=30'});
-              console.log(direction);
+              dy = 1;
+              console.log("start moving "+direction);
               break;
-            case 'down':
-              car.animate({top:'+=30'});
-              console.log(direction);
+              case 'down':
+              dy = -1;
+              console.log("start moving "+direction);
               break;
             case 'left':
-              car.animate({left:'-=30'});
-              console.log(direction);
+              dx = -1;
+              console.log("start moving "+direction);
               break;
             case 'right':
-              car.animate({left:'+=30'});
-              console.log(direction);
+              dx = 1;
+              console.log("start moving "+direction);
               break;
           }
-        });
+
+          function fun(){
+            // renderCanvas();
         
+            car.x += dx / 60 * speed;
+            car.y += dy / 60 * speed;
+            renderObject();
+
+            requestAnimationFrame(fun);
+        }
+
+        //   requestAnimationFrame(fun);
+        // });
+      })
 console.log("drive safe ;p")
 
 

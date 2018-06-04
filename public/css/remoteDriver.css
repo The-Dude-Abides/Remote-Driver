@@ -1,27 +1,20 @@
-
-
 body {
   width: auto;
   background-color: rgb(59, 56, 56);
-  font-family: "Josefin Sans" 100px;;
+  font-family: "Josefin Sans" 100px;
   text-align: center;
 }
 
-body,
-.jumbotron {
-  background-color: aliceblue;
+body{
+  background-color: lightgray;
 }
 
-/* .jumbotron, */
 .pagebreak {
   border-bottom: 1px solid black;
+  width: auto;
 }
 
-.pagebreak {
- width: auto;
-}
-
-.navbar, .navi-failsafe {
+.navbar {
   height: 20px;
   border-radius: 0px;
   background-color: rgb(37, 35, 35);
@@ -30,6 +23,14 @@ body,
   width: auto;
   margin-top: 0px;
   min-width: 600px;
+}
+
+.row1 {
+  margin-bottom: 8px;
+}
+
+.row3 {
+  margin-top: 8px;
 }
 
 h1 {
@@ -45,10 +46,13 @@ h1 {
   width: 100px;
 }
 
-#stop-button{
-  /* position: relative; */
-  /* margin-left: 90px; */
-  offset: left;
+#stop-button {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.glyphicon {
+  left: -1px;
 }
 
 #data-panel.row {
@@ -56,61 +60,71 @@ h1 {
   width: 100%;
   margin: 0px;
   background-color: rgb(51, 49, 58);
-  min-width: 600px;
 }
 
- #command-log {
-    height: 400px;
-    padding: 15px;
-    /* margin: 10px 23px 10px 23px; */
-    /* width: 100%; */
-    min-height: 200px;
-    overflow-y: scroll;
-    color: lightgray;
- }
- 
-
-#simulation,
- {
-  border: 0px solid black;
-  border-radius: 5px;
-  padding: 15px;
-  /* margin: 10px 23px 10px 23px; */
-  width: 100%;
-  min-height: 200px;
-  background-color: rgb(51, 49, 58);
-  color: lightgray;
-
+.col-md-3 {
+  position: relative;
 }
 
 #compass {
-  position: absolute;
   border-radius: 150px;
   height: 300px;
   width: 300px;
   background-color: rgb(147, 153, 173);
-    margin: 30px;
-    padding: 40px;
+  margin: 30px;
+  padding: 40px;
 }
 
-#compass.span {
-    position: absolute;
-        top: 45px;
-        left: 2px;
-        width: 100%;
-        color: blue;
+
+/* .glyphicon-arrow-up {
+  top: -1px;
+} */
+
+/* .glyphicon-arrow-down {
+  top: 6px;
+} */
+
+/* .glyphicon-stop {
+  top: 1px;
+} */
+
+#command-log {
+  padding: 15px;
+  margin: 10px 23px 10px 23px;
+  width: 300px;
+  min-height: 200px;
+  overflow-y: scroll;
+  color: lightgray;
+  /* display: inline; */
 }
 
-canvas#game { 
-  background: #eee;
-  width: auto;
+.textarea {
+  position: relative;
+  border-radius: 10px;
+  height: 300px;
+  width: 300px;
+  background-color: rgb(147, 153, 173);
+  margin: 30px;
+  padding: 40px;
 }
+
+#simulation {
+  border-radius: 5px;
+  padding: 15px;
+  width: 300px;
+  min-height: 200px;
+  color: lightgray;
+}
+
+/* #canvas {
+  
+} */
 
 .arrow-btn {
   border-radius: 100px;
   border-width: 0px;
   background-color: rgb(34, 32, 32);
-  margin-bottom: 5px;
+  /* margin: 5px; */
 }
 
 .glyphicon {
@@ -124,10 +138,9 @@ canvas#game {
   margin: 17px;
   margin-left: 20px;
   color: rgb(13, 138, 13);
-
 }
 
-.header-text{
+.header-text {
   font-size: 12px;
 }
 
@@ -140,16 +153,17 @@ canvas#game {
 }
 
 #paths {
-font-size: 14px;
+  font-size: 14px;
 }
 
 .compass-glyph {
   width: auto;
 }
 
-#car{
+.pseudoCar {
+  position: absolute;
   width: 20px;
   height: 20px;
-  background:green;
+  background: green;
   border-radius: 30px;
 }
