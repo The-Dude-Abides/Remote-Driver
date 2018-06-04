@@ -64,6 +64,11 @@ h1 {
 
 .col-md-3 {
   position: relative;
+  padding: 15px;
+  margin: 10px 23px 10px 23px;
+  width: auto;
+  min-height: 200px;
+  color: lightgray;
 }
 
 #compass {
@@ -73,28 +78,6 @@ h1 {
   background-color: rgb(147, 153, 173);
   margin: 30px;
   padding: 40px;
-}
-
-
-/* .glyphicon-arrow-up {
-  top: -1px;
-} */
-
-/* .glyphicon-arrow-down {
-  top: 6px;
-} */
-
-/* .glyphicon-stop {
-  top: 1px;
-} */
-
-#command-log {
-  padding: 15px;
-  margin: 10px 23px 10px 23px;
-  width: 300px;
-  min-height: 200px;
-  color: lightgray;
-  /* display: inline; */
 }
 
 #area {
@@ -107,21 +90,8 @@ h1 {
   height: 300px;
   width: 300px;
   background-color: rgb(147, 153, 173);
-  margin: 30px;
   padding: 40px;
 }
-
-#simulation {
-  border-radius: 5px;
-  padding: 15px;
-  width: 300px;
-  min-height: 200px;
-  color: lightgray;
-}
-
-/* #canvas {
-  
-} */
 
 .arrow-btn {
   border-radius: 100px;
